@@ -11,7 +11,7 @@ for(option of options){
 button.addEventListener("click", submit);
 
 function select(event){
-    let target = event.target;
+    let target = event.currentTarget;
     for(option of options){
         option.classList.remove("selected");
     }
