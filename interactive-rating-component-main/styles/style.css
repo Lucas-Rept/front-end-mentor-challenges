@@ -90,10 +90,13 @@ ul{
     border-radius: 50%;
     cursor: pointer;
     font-weight: bolder;
+    transition: 0.1s;
 }
 
 .option:hover{
-    background-color: lightgrey;
+    transition: 0.1s;
+    color: lightgray;
+    background-color: hsl(216, 12%, 54%);
 }
 
 .selected{
@@ -103,6 +106,7 @@ ul{
 
 .selected:hover{
     background-color: hsl(25, 97%, 53%);
+    color: white;
 }
 
 button{
@@ -119,6 +123,13 @@ button{
     cursor: pointer;
     margin-top: auto;
     border: none;
+    transition: 0.2s;
+}
+
+button:hover{
+    transition: 0.2s;
+    background-color: white;
+    color:hsl(25, 97%, 53%);
 }
 
 @media screen and (max-width: 420px){ 
