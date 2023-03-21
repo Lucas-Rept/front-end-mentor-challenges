@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0 10px 0 10px;
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%)  ;
+    background-image: url(../images/pattern-background-desktop.svg);
+}
+
+main{
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    margin-bottom: 2.2rem;
+}
+
+.details{
+    padding: 0 2.5rem;
+}
+
+h1{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: bolder;
+}
+
+p{
+    margin-bottom: 1.2rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.annual-plan-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 17px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+}
+
+.annual-plan-box img{
+    width: 40px;
+    height: 40px;
+}
+
+.price{
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-type{
+    font-weight: bolder;
+    color: hsl(223, 47%, 23%);
+}
+
+.change-plan{
+    font-size: 13px;
+    font-weight: bolder;
+    margin-left: 1.2rem;
+}
+
+button{
+    transition: 0.3s;
+    font-family: "Red Hat Display";
+    font-weight: bolder;
+    width: 100%;
+    margin-top: 1.6rem;
+    padding: 10px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.113);
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.3s;
+    filter: brightness(150%);
+}
+
+.cancel-order{
+    display: inline-block;
+    margin-top: 1.7rem;
+    margin-bottom: 2.2rem;
+    font-size: 14px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: bolder;
+}
+
+.cancel-order:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media screen and (max-width: 370px) {
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+
+    .details{
+        padding: 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .annual-plan-box{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .annual-plan-box img{
+        margin-bottom: 1rem;
+    }
+
+    .change-plan{
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+}
